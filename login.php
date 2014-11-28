@@ -30,7 +30,7 @@
             
                 $_SESSION['id'] = mysqli_insert_id($link);
                 //Redirect to logged in page
-		        header("Location:mainpage.php");
+		header("Location:mainpage.php");
             }
         }
     }
@@ -46,7 +46,7 @@
             header("Location:mainpage.php");
         }else{
            //not logged in 
- 	        $error = "We could not find a user with that email and password. Please try again.";
+ 	   $error = "We could not find a user with that email and password. Please try again.";
         }
     }
     
